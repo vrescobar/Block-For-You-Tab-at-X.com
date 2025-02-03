@@ -2,9 +2,13 @@
 
 **ForYouBlocker** is a lightweight and easy-to-read Google Chrome and Safari
 extension that hides the distracting "For You" tab on Twitter (now X.com) and
-automatically selects the "Following" tab by default. This tool was created for
-users who prefer a simplified experience without the policies imposed by the
-Chrome Web Store.
+automatically selects the "Following" tab by default.
+
+This tool was created for users who prefer a happy X.com experience, and without
+a complicated web extension with many options or weird unknown changes.
+
+It just does one simple thing well, and the code is so straightworward to read
+so even novel programers are sure there is no malware or whatsoever.
 
 ![Screenshot1 of the X page without the damn tab](imgs/Screenshot1.png)
 
