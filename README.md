@@ -13,18 +13,21 @@ so even novel programers are sure there is no malware or whatsoever.
 ![Screenshot1 of the X page without the damn tab](imgs/Screenshot1.png)
 
 > **Note:**\
-> You need to install it all by yourself, I did not pack it and upload it to the
-> App Store.
+> You need to install it all by yourself, I did not pack it and upload either to
+> the App Store or to Chrome's Web Store.
 >
-> It is not published on the Chrome Web Store in order to keep things simple and
-> to avoid certain Google policies.
->
-> The same goes about publishing to the apple App Store, I just do not want to
-> pay the fee to publish just an extension.
->
-> If you want that I compile it and publish in the Apple Store or the Chrome
-> Store, open an issue about the will to make me a donation (it takes about $99
-> to get the developer plan for Apple)
+> Both stores have a developer registration fee, which I do not need for any
+> other project (which are about $5 and $100 respectively) but you can compile
+> and install the extension by yourself.
+
+Inspired by some friends, I decided to accept donations for this purpose:
+
+- If I reach 10€ I will upload and make publicly available the Chrome Extension
+- If I reach 125€ I will upload and make public and free the extension the
+  safari extension also on Apple Store
+
+If you decide to sponsor the project, I accept a donation via
+[Ko-Fi ☕️](https://ko-fi.com/vrescobar) 🙏
 
 ## Project Structure
 
