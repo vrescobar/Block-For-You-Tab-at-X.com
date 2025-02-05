@@ -34,7 +34,7 @@ If you decide to sponsor the project, I accept a donation via
 - **ForYouBlocker/**\
   Contains the source code of the extension:
   - `manifest.json` – The extension manifest.
-  - `content.js` – The script that hides the "For You" tab and activates the
+  - `src/content.js` – The script that hides the "For You" tab and activates the
     "Following" tab.
 
 - **ForYouBlocker.crx**\

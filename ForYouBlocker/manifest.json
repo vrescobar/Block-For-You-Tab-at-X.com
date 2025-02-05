@@ -1,8 +1,11 @@
 {
     "manifest_version": 3,
     "name": "No more For You Tab at x.com",
-    "version": "1.1",
-    "description": "Hides the first (For You) tab on Twitter (X) and auto-selects the second (Following) tab by default. It does not modify anythign else, the code is minimal and simple to read in order to be easily reviewed by anyone.",
+    "version": "1.2.1",
+    "description": "Hides the tab For You on X.com, previously twitter, and selects the tab Following by default. Just that.",
+    "icons": {
+        "128": "assets/icon.png"
+    },
     "content_scripts": [
         {
             "matches": [
@@ -10,7 +13,7 @@
                 "https://x.com/*"
             ],
             "js": [
-                "content.js"
+                "src/content.js"
             ],
             "run_at": "document_idle"
         }
