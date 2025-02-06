@@ -143,6 +143,10 @@ does not allow to run browser extensions in them.
 This project is licensed under the MIT License. See the
 [LICENSE.txt](LICENSE.txt) file for details.
 
+## Privacy
+
+See the document [PRIVACY.md](PRIVACY.md)
+
 ---
 
 ## Final Remarks
