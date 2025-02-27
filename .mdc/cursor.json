@@ -1,0 +1,105 @@
+{
+    "version": "1.0.0",
+    "project": "X.com For You Blocker",
+    "files": {
+        "README.md": {
+            "lastUpdate": "2024-03-20",
+            "description": "Documentación principal del proyecto que incluye instrucciones de instalación y uso"
+        },
+        "ForYouBlocker/manifest.json": {
+            "lastUpdate": "2024-03-20",
+            "description": "Archivo de manifiesto de la extensión",
+            "type": "manifest",
+            "version": "3"
+        },
+        "ForYouBlocker/src/content.js": {
+            "lastUpdate": "2024-03-20",
+            "description": "Script principal que oculta la pestaña 'For You' y activa 'Following'",
+            "functions": {
+                "updateTabs": "Encuentra y actualiza las pestañas, ocultando 'For You' y activando 'Following'",
+                "init": "Inicializa el proceso y configura el MutationObserver"
+            },
+            "type": "content_script"
+        },
+        "PRIVACY.md": {
+            "lastUpdate": "2024-03-20",
+            "description": "Documento de política de privacidad"
+        },
+        "LICENSE.txt": {
+            "lastUpdate": "2024-03-20",
+            "description": "Licencia MIT del proyecto"
+        },
+        ".cursorrules": {
+            "lastUpdate": "2024-03-20",
+            "description": "Reglas de desarrollo y estilo para el proyecto",
+            "type": "config"
+        },
+        ".cursorules": {
+            "lastUpdate": "2024-03-20",
+            "description": "Configuración del editor Cursor",
+            "type": "config"
+        }
+    },
+    "metadata": {
+        "author": "vrescobar",
+        "maintainers": [
+            "vrescobar"
+        ],
+        "platforms": [
+            "Chrome",
+            "Safari",
+            "Brave"
+        ],
+        "tags": [
+            "extension",
+            "x.com",
+            "twitter",
+            "blocker",
+            "privacy",
+            "productivity"
+        ],
+        "status": "active",
+        "architecture": {
+            "type": "browser-extension",
+            "manifest_version": 3,
+            "components": [
+                "content_script",
+                "manifest"
+            ]
+        }
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "xcode": "Para compilación en Safari",
+        "safari-web-extension-converter": "Para conversión a extensión Safari"
+    },
+    "development": {
+        "style": {
+            "javascript": {
+                "naming": {
+                    "files": "lowercase_with_underscores",
+                    "functions": "camelCase",
+                    "classes": "PascalCase"
+                },
+                "format": {
+                    "semicolons": true,
+                    "quotes": "single",
+                    "indentation": "spaces",
+                    "spaces": 4
+                }
+            }
+        },
+        "security": {
+            "csp": true,
+            "https_only": true,
+            "input_validation": true
+        },
+        "browser_support": {
+            "minimum_versions": {
+                "chrome": "88.0",
+                "safari": "14.0",
+                "brave": "1.0"
+            }
+        }
+    }
+} 

@@ -13,21 +13,14 @@ so even novel programers are sure there is no malware or whatsoever.
 ![Screenshot1 of the X page without the damn tab](imgs/Screenshot1.png)
 
 > **Note:**\
-> You need to install it all by yourself, I did not pack it and upload either to
-> the App Store or to Chrome's Web Store.
+> ¡La extensión ya está disponible en la Chrome Web Store! Puedes instalarla
+> directamente desde
+> [aquí](https://chromewebstore.google.com/detail/no-more-for-you-tab-at-xc/mkicndbahaamegdhdappppbpjkgcokcj).
 >
-> Both stores have a developer registration fee, which I do not need for any
-> other project (which are about $5 and $100 respectively) but you can compile
-> and install the extension by yourself.
-
-Inspired by some friends, I decided to accept donations for this purpose:
-
-- If I reach 10€ I will upload and make publicly available the Chrome Extension
-- If I reach 125€ I will upload and make public and free the extension the
-  safari extension also on Apple Store
-
-If you decide to sponsor the project, I accept a donation via
-[Ko-Fi ☕️](https://ko-fi.com/vrescobar) 🙏
+> Para Safari, aún necesitas instalarla manualmente ya que requiere una cuota de
+> desarrollador. Si deseas apoyar el proyecto para que esté disponible en la App
+> Store de Apple (cuota de $100), puedes hacer una donación a través de
+> [Ko-Fi ☕️](https://ko-fi.com/vrescobar) 🙏
 
 ## Project Structure
 
@@ -48,31 +41,16 @@ If you decide to sponsor the project, I accept a donation via
 
 ## Installation Instructions for Google Chrome or Brave (on desktop)
 
-Since the extension is not distributed via the Chrome Web Store, you have two
-options for installation:
+The easiest way to install the extension is through the Chrome Web Store:
 
-![Screenshot2 of the extensions page with the extension loaded](imgs/Screenshot2.png)
+1. Visit the
+   [Chrome Web Store page](https://chromewebstore.google.com/detail/no-more-for-you-tab-at-xc/mkicndbahaamegdhdappppbpjkgcokcj)
+2. Click on "Add to Chrome"
+3. Confirm the installation when prompted
 
-#### Method 1: Installing the Packaged (.crx) Extension
+#### Alternative Method: Loading the Unpacked Extension (for developers)
 
-1. **Download the [ForYouBlocker.crx](ForYouBlocker.crx) file.**
-
-2. **Open Chrome or Brave** and navigate to: `chrome://extensions` or
-   `brave://extensions`
-
-3. **Enable Developer Mode**\
-   Toggle the "Developer mode" switch in the top-right corner of the Extensions
-   page.
-
-4. **Drag and Drop**\
-   Drag the `ForYouBlocker.crx` file into the Extensions page.\
-   When prompted, click **Add extension** to confirm the installation.
-
-> **Note:**\
-> If dragging the file doesn’t work (or if Chrome/Brave blocks the
-> installation), try Method 2.
-
-#### Method 2: Loading the Unpacked Extension
+If you prefer to install the extension from source:
 
 1. **Clone or Download the Repository**\
    Make sure you have the full project folder (including the `ForYouBlocker`
