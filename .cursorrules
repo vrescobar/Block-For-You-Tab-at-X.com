@@ -1,0 +1,20 @@
+{
+    "filePatterns": {
+        "modify": [
+            "**/*.ts",
+            "**/*.json",
+            "**/*.md"
+        ],
+        "ignore": [
+            "ForYouBlocker/src/content.js",
+            "dist/**/*"
+        ]
+    },
+    "formatting": {
+        "typescript": {
+            "indentSize": 2,
+            "singleQuote": true,
+            "semi": true
+        }
+    }
+}

@@ -27,8 +27,13 @@ so even novel programers are sure there is no malware or whatsoever.
 - **ForYouBlocker/**\
   Contains the source code of the extension:
   - `manifest.json` – The extension manifest.
-  - `src/content.js` – The script that hides the "For You" tab and activates the
-    "Following" tab.
+  - `src/content.ts` – The TypeScript source that hides the "For You" tab and
+    activates the "Following" tab.
+  - `src/content.js` – The compiled JavaScript version of the content script.
+
+- **scripts/**\
+  Contains build scripts:
+  - `build.ts` – Deno build script that compiles TypeScript to JavaScript.
 
 - **ForYouBlocker.crx**\
   The packaged Chrome extension file.
@@ -38,6 +43,21 @@ so even novel programers are sure there is no malware or whatsoever.
 
 - **README.md**\
   This documentation file.
+
+## Development
+
+This project uses TypeScript and Deno for development. Make sure you have
+[Deno](https://deno.land) installed.
+
+### Building the Extension
+
+```bash
+# Verificar tipos
+deno task check
+
+# Compilar TypeScript a JavaScript
+deno task build
+```
 
 ## Installation Instructions for Google Chrome or Brave (on desktop)
 

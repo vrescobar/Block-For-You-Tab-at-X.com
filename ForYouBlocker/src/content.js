@@ -1,53 +1,47 @@
-(function () {
-    // Flag to prevent multiple simulated clicks on the "Following" tab.
+"use strict";
+(() => {
+    // Flag para prevenir múltiples clicks simulados en la pestaña "Following"
     let hasSwitched = false;
-
     /**
-     * Finds all tab elements using the precise selector.
-     * The first occurrence (index 0) is assumed to be the "For You" tab,
-     * and the second (index 1) is assumed to be the "Following" tab.
+     * Encuentra todos los elementos de pestaña usando el selector preciso.
+     * La primera ocurrencia (índice 0) se asume que es la pestaña "For You",
+     * y la segunda (índice 1) se asume que es la pestaña "Following".
      */
     function updateTabs() {
         const tabs = document.querySelectorAll('a[href="/home"][role="tab"]');
-
-        // If fewer than two matching tabs exist, there's nothing to do yet.
+        // Si hay menos de dos pestañas coincidentes, no hay nada que hacer aún.
         if (tabs.length < 2) {
             return false;
         }
-
-        // Hide the first tab ("For You").
+        // Ocultar la primera pestaña ("For You").
         tabs[0].style.display = 'none';
-
-        // If we're on the "For You" timeline (i.e. URL is "/home") and haven't switched yet,
-        // simulate a click on the second tab ("Following").
-        if (!hasSwitched && (window.location.pathname === '/home' || window.location.pathname === '/home/')) {
+        // Si estamos en la línea de tiempo "For You" (es decir, la URL es "/home") y no hemos cambiado aún,
+        // simular un clic en la segunda pestaña ("Following").
+        if (!hasSwitched && (globalThis.location.pathname === '/home' || globalThis.location.pathname === '/home/')) {
             tabs[1].click();
             hasSwitched = true;
         }
-
         return true;
     }
-
     /**
-     * Initializes the process:
-     * 1. Immediately attempts to update the tabs.
-     * 2. Sets up a MutationObserver to handle any dynamic changes in the DOM.
+     * Inicializa el proceso:
+     * 1. Intenta actualizar las pestañas inmediatamente.
+     * 2. Configura un MutationObserver para manejar cualquier cambio dinámico en el DOM.
      */
     function init() {
-        // Try to update the tabs immediately.
+        // Intentar actualizar las pestañas inmediatamente.
         updateTabs();
-
-        // Observe DOM changes to continuously check for and update the tabs.
+        // Observar cambios en el DOM para verificar y actualizar las pestañas continuamente.
         const observer = new MutationObserver(() => {
             updateTabs();
         });
         observer.observe(document.body, { childList: true, subtree: true });
     }
-
-    // Run the init() function when the DOM is fully loaded.
+    // Ejecutar la función init() cuando el DOM esté completamente cargado.
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
-    } else {
+    }
+    else {
         init();
     }
 })();

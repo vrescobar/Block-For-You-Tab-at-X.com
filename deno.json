@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "build": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run scripts/build.ts",
+        "check": "deno check ForYouBlocker/src/**/*.ts",
+        "test": "deno test",
+        "watch": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run scripts/build.ts --watch"
+    },
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "strict": true
+    }
+}

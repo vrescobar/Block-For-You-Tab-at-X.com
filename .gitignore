@@ -4,3 +4,7 @@ ForYouBlocker-ios/No more For You Tab at x.com
 *.zip
 
 ForYouBlocker/assets/icon.png~
+
+# Archivos generados
+# ForYouBlocker/src/content.js # keep this file for debugging purposes
+dist/
